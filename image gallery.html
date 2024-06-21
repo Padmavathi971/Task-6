@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="image-gallery">
+
+    <img src="C:\Users\padma\Downloads\b6116c1fd24ee6c872dfcdbd91175dcc.jpg" alt="Gallery Image" class="gallery-image" onclick="openModal(this.src)">
+    <img src="C:\Users\padma\Downloads\ag-doc-2281-0036-pub.jpg" alt="Gallery Image" class="gallery-image" onclick="openModal(this.src)">
+    <img src="C:\Users\padma\Downloads\png-art-gallery-2.jpg" alt="Gallery Image" class="gallery-image" onclick="openModal(this.src)">
+    <img src="C:\Users\padma\Downloads\images.jpg" alt="Gallery Image" class="gallery-image" onclick="openModal(this.src)">
+  </div>
+
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="navigation">
+      <button onclick="navigateImages(-1)">&#10094;</button>
+      <button onclick="navigateImages(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
